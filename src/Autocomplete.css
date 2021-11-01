@@ -71,7 +71,11 @@
   background-color: rgb(0, 206, 219);
 }
 
-.makersden-autocomplete-input::-webkit-search-cancel-button {
+.makersden-autocomplete-input::-webkit-search-decoration,
+.makersden-autocomplete-input::-webkit-search-cancel-button,
+.makersden-autocomplete-input::-webkit-search-results-button,
+.makersden-autocomplete-input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
   display: none;
 }
 
