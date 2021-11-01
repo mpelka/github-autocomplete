@@ -1,0 +1,130 @@
+.makersden-autocomplete-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 40rem;
+  min-width: 18rem;
+  padding: 0 1rem;
+}
+
+.makersden-autocomplete-input {
+  appearance: none;
+  background: white;
+  border-radius: 0.25rem;
+  border: none;
+  color: black;
+  flex: auto;
+  font-family: inherit;
+  font-size: inherit;
+  height: 3rem;
+  line-height: 1.5;
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+}
+
+.makersden-autocomplete-input-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.makersden-autocomplete-input:focus {
+  outline-color: #e144eb;
+  outline-offset: 1px;
+  outline-style: solid;
+}
+
+.makersden-autocomplete-menu {
+  position: relative;
+  background-color: white;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+  margin: 0 1rem;
+  color: black;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  max-height: 40vh;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  overflow: scroll;
+}
+
+.makersden-autocomplete-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.makersden-autocomplete-menu a {
+  font-size: 0.9rem;
+  color: inherit;
+  text-decoration: inherit;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(249, 250, 251);
+}
+
+.makersden-autocomplete-menu li[aria-selected="true"] a {
+  color: white;
+  background-color: rgb(0, 206, 219);
+}
+
+.makersden-autocomplete-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.makersden-autocomplete--icon-spinner {
+  height: 1.25rem;
+  width: 1.25rem;
+  animation: spin 1s linear infinite;
+  color: rgb(145, 145, 145);
+  position: absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+}
+
+.makersden-autocomplete--button-reset {
+  appearance: none;
+  position: absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+  background-color: transparent;
+  border: none;
+}
+
+.makersden-autocomplete--icon-cross {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: rgb(145, 145, 145);
+}
+
+.makersden-autocomplete--icon-search {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: rgb(145, 145, 145);
+  position: absolute;
+  top: 2.5rem;
+  left: 2rem;
+}
+
+.makersden-autocomplete--icon-user,
+.makersden-autocomplete--icon-repo {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 1rem;
+  color: rgb(145, 145, 145);
+}
+
+.makersden-autocomplete-menu--error {
+  color: red;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
