@@ -1,4 +1,4 @@
-.makersden-autocomplete-wrapper {
+.github-autocomplete-wrapper {
   position: relative;
   width: 100%;
   max-width: 40rem;
@@ -6,7 +6,7 @@
   padding: 0 1rem;
 }
 
-.makersden-autocomplete-input {
+.github-autocomplete-input {
   appearance: none;
   background: white;
   border-radius: 0.25rem;
@@ -21,18 +21,18 @@
   padding: 0.5rem 1rem 0.5rem 3rem;
 }
 
-.makersden-autocomplete-input-label {
+.github-autocomplete-input-label {
   display: block;
   margin-bottom: 0.5rem;
 }
 
-.makersden-autocomplete-input:focus {
+.github-autocomplete-input:focus {
   outline-color: #e144eb;
   outline-offset: 1px;
   outline-style: solid;
 }
 
-.makersden-autocomplete-menu {
+.github-autocomplete-menu {
   position: relative;
   background-color: white;
   border-radius: 0.25rem;
@@ -48,12 +48,12 @@
   overflow: scroll;
 }
 
-.makersden-autocomplete-menu ul {
+.github-autocomplete-menu ul {
   list-style: none;
   padding: 0;
 }
 
-.makersden-autocomplete-menu a {
+.github-autocomplete-menu a {
   font-size: 0.9rem;
   color: inherit;
   text-decoration: inherit;
@@ -66,20 +66,20 @@
   background-color: rgb(249, 250, 251);
 }
 
-.makersden-autocomplete-menu li[aria-selected="true"] a {
+.github-autocomplete-menu li[aria-selected="true"] a {
   color: white;
   background-color: rgb(0, 206, 219);
 }
 
-.makersden-autocomplete-input::-webkit-search-decoration,
-.makersden-autocomplete-input::-webkit-search-cancel-button,
-.makersden-autocomplete-input::-webkit-search-results-button,
-.makersden-autocomplete-input::-webkit-search-results-decoration {
+.github-autocomplete-input::-webkit-search-decoration,
+.github-autocomplete-input::-webkit-search-cancel-button,
+.github-autocomplete-input::-webkit-search-results-button,
+.github-autocomplete-input::-webkit-search-results-decoration {
   -webkit-appearance: none;
   display: none;
 }
 
-.makersden-autocomplete--icon-spinner {
+.github-autocomplete--icon-spinner {
   height: 1.25rem;
   width: 1.25rem;
   animation: spin 1s linear infinite;
@@ -89,7 +89,7 @@
   right: 1.5rem;
 }
 
-.makersden-autocomplete--button-reset {
+.github-autocomplete--button-reset {
   appearance: none;
   position: absolute;
   top: 2.5rem;
@@ -98,13 +98,13 @@
   border: none;
 }
 
-.makersden-autocomplete--icon-cross {
+.github-autocomplete--icon-cross {
   height: 1.25rem;
   width: 1.25rem;
   color: rgb(145, 145, 145);
 }
 
-.makersden-autocomplete--icon-search {
+.github-autocomplete--icon-search {
   height: 1.25rem;
   width: 1.25rem;
   color: rgb(145, 145, 145);
@@ -113,15 +113,15 @@
   left: 2rem;
 }
 
-.makersden-autocomplete--icon-user,
-.makersden-autocomplete--icon-repo {
+.github-autocomplete--icon-user,
+.github-autocomplete--icon-repo {
   height: 1.25rem;
   width: 1.25rem;
   margin-right: 1rem;
   color: rgb(145, 145, 145);
 }
 
-.makersden-autocomplete-menu--error {
+.github-autocomplete-menu--error {
   color: red;
   font-weight: bold;
   margin-top: 0.5rem;

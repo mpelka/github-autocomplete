@@ -1,7 +1,7 @@
 {
   "name": "github-autocomplete",
   "version": "0.0.0",
-  "types": "./src/index.d.ts",
+  "types": "./src/types.ts",
   "author": "Marek Pełka",
   "license": "ISC",
   "scripts": {

@@ -7,7 +7,7 @@ import userEvent from "@testing-library/user-event";
 import React from "react";
 import Autocomplete from "../src/Autocomplete";
 
-describe("LoginForm", () => {
+describe("Autocomplete component", () => {
   it("should render in initial state", async () => {
     render(<Autocomplete name="search" />);
 

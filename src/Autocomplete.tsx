@@ -77,18 +77,18 @@ function Autocomplete({ name, placeholder }: { name: string; placeholder?: strin
   const { selectedIndex, setSelectedIndex } = useKeyboard(reset, results);
 
   return (
-    <div className="makersden-autocomplete-wrapper">
+    <div className="github-autocomplete-wrapper">
       <form role="search" noValidate onSubmit={(event) => event.preventDefault()}>
-        <label id="makersden-autocomplete-label" className="makersden-autocomplete-input-label">
+        <label id="github-autocomplete-label" className="github-autocomplete-input-label">
           Search GitHub
         </label>
         <input
           aria-autocomplete="list"
-          aria-labelledby="makersden-autocomplete-label"
+          aria-labelledby="github-autocomplete-label"
           autoCapitalize="off"
           autoComplete="off"
           autoCorrect="off"
-          className="makersden-autocomplete-input"
+          className="github-autocomplete-input"
           enterKeyHint="go"
           maxLength={64}
           name={name}
@@ -107,7 +107,7 @@ function Autocomplete({ name, placeholder }: { name: string; placeholder?: strin
 
       {status !== "loading" && (
         <button
-          className="makersden-autocomplete--button-reset"
+          className="github-autocomplete--button-reset"
           onClick={() => reset()}
           title="Clear the query"
           type="reset"
@@ -117,18 +117,18 @@ function Autocomplete({ name, placeholder }: { name: string; placeholder?: strin
       )}
 
       {status === "error" && (
-        <div role="alert" className="makersden-autocomplete-menu--error">
+        <div role="alert" className="github-autocomplete-menu--error">
           Something went wrong. Try again in a few moments.
         </div>
       )}
 
       {status === "success" && (
-        <div className="makersden-autocomplete-menu" ref={dropdownMenuRef}>
+        <div className="github-autocomplete-menu" ref={dropdownMenuRef}>
           <ul role="listbox">
             {results?.map((item, index) => (
               <li
                 aria-selected={selectedIndex === index}
-                className="makersden-autocomplete-menu-item"
+                className="github-autocomplete-menu-item"
                 key={item?.id}
                 onMouseEnter={() => setSelectedIndex(index)}
                 role="option"
